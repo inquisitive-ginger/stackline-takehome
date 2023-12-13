@@ -4,7 +4,7 @@ type Props = {
   data: ProductSales[];
 };
 
-const currencyFormatter = Intl.NumberFormat("en-US", {
+export const currencyFormatter = Intl.NumberFormat("en-US", {
   style: "currency",
   currency: "USD",
   minimumFractionDigits: 0,
