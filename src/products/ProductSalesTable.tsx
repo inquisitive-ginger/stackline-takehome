@@ -56,6 +56,11 @@ function getSortedData(data: ProductSales[], tableSort: ProductSalesSort) {
   return sortedData;
 }
 
+function getFormattedDate(date: string) {
+  const [year, month, day] = date.split("-");
+  return `${month}-${day}-${year}`;
+}
+
 const ProductSalesTable = ({ data }: Props) => {
   const [tableSort, setTableSort] = useState<ProductSalesSort>({
     sortBy: "WEEK ENDING",
@@ -92,7 +97,9 @@ const ProductSalesTable = ({ data }: Props) => {
         <tbody>
           {sortedData.map((salesRecord: ProductSales) => (
             <tr key={salesRecord.weekEnding} className="border-b p-2">
-              <td className="text-left px-6 py-4">{salesRecord.weekEnding}</td>
+              <td className="text-left px-6 py-4">
+                {getFormattedDate(salesRecord.weekEnding)}
+              </td>
               <td className="text-right px-6 py-4">
                 {currencyFormatter.format(salesRecord.retailSales)}
               </td>

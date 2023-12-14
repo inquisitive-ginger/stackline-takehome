@@ -105,7 +105,7 @@ export default function prepareChartData(
         data: data.map((d) => d.retailSales),
         cubicInterpolationMode: "monotone",
         pointRadius: 1,
-        borderColor: "#1F75FE",
+        borderColor: "#189ad3",
       },
       {
         label: "Wholesale Sales",

@@ -11,7 +11,9 @@ import {
 import { Line } from "react-chartjs-2";
 
 import { ProductSales } from "./types";
-import prepareChartData, { salesChartOptions } from "./utils/prepareChartData";
+import prepareChartData, {
+  salesChartOptions,
+} from "./utils/prepare-chart-data";
 
 ChartJS.register(
   CategoryScale,
