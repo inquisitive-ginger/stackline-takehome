@@ -74,6 +74,7 @@ export const salesChartOptions: ChartOptions<"line"> = {
       },
       ticks: {
         callback: getXLabel(),
+        autoSkip: false,
       },
     },
     y: {

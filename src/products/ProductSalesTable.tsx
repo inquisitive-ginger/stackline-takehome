@@ -88,6 +88,7 @@ const ProductSalesTable = ({ data }: Props) => {
           <tr className="border-b">
             {headings.map((heading) => (
               <SortableTableHeader
+                key={heading}
                 heading={heading as ProductSalesSort["sortBy"]}
                 onSort={handleSort}
               />

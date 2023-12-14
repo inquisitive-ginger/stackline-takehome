@@ -35,7 +35,7 @@ const ProductSalesChart = ({ data }: Props) => {
   return (
     <div className="shadow-md p-4 min-h-[600px] bg-white flex flex-col w-full">
       <h1 className="text-lg text-gray-500">Retail Sales</h1>
-      <div className="relative m-auto w-[75vw] h-full">
+      <div className="relative lg:w-[64vw] xl:w-[74vw] h-full">
         <Line options={salesChartOptions} data={chartData} />
       </div>
     </div>
