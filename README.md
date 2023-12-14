@@ -2,6 +2,10 @@
 
 Simple product page with basic product details, weekly sales chart and table. Implemented using React, Redux (RTK Query) and Tailwind CSS.
 
+| Mock-up                                         | Implemented                                         |
+| ----------------------------------------------- | --------------------------------------------------- |
+| <img src="./public/mockup.png" width="600px" /> | <img src="./public/screenshot.png" width="600px" /> |
+
 ## Details
 
 - The `/app` folder contains top-level components and store configuration. The `/products` folder contains the feature-specific components and store slice used to build up the product page.
